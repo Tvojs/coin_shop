@@ -1,0 +1,494 @@
+:root {
+    --main-color: #000000;
+    --second-color: #1A3397;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    width: 800px;
+    padding-top: 50px;
+}
+
+.passport {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+p {
+    font-size: 32px;
+    font-family: 'Fors', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+button {
+    transition: 0.5s;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Fors';
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--second-color);
+    color: #ffffff;
+}
+
+nav {
+    background: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+a {
+    font-size: 24px;
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 16px 32px;
+    margin: 0 20px;
+    transition: 0.3s;
+    font-family: 'Manifont';
+}
+
+a:hover {
+    color: var(--second-color);
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    min-height: 100%;
+}
+
+.main img {
+    max-width: 60%;
+    padding: 20px;
+}
+
+.column-images {
+    flex: 1;
+}
+
+.column-text {
+    flex: 1;
+}
+
+.passphoto {
+    width: 220px;
+    height: 290px;
+    margin-top: -560px;
+    margin-left: 32px;
+}
+
+.infa {
+    text-align: center;
+}
+
+.infa img {
+    width: 1000px;
+    height: auto;
+    max-width: 100%;
+}
+
+.active {
+    font-weight: bolder;
+    color: #1A3397;
+}
+
+@font-face {
+    font-family: 'Manifont';
+    src: url('ManifontGroteskBook.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fors';
+    src: url('TTForsEducationalRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Manifont';
+    color: #1A3397;
+    text-align: center;
+}
+
+.coin-categories {
+    font-family: 'Fors';
+}
+
+.moneta {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.moneta img {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.cartinka {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.cartinka:hover {
+    transform: scale(1.1);
+}
+
+.nadpis {
+    font-family: 'Fors';
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.glavnayanadpis {
+    font-family: 'Manifont';
+    color: #1A3397;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.footer {
+    color: #ffffff;
+    background-color: #1A3397;
+    font-family: 'Manifont';
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-title {
+    text-align: center;
+    color: #ffffff;
+}
+
+#forma {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#capcha {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fors';
+    font-size: 20px;
+    color: #1A3397;
+}
+
+label {
+    color: var(--main-color);
+    font-family: 'Manifont';
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 2px solid var(--second-color);
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Fors';
+}
+
+input:focus,
+select:focus {
+    border-color: var(--second-color);
+    outline: none;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    font-family: 'Fors';
+}
+
+.error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    font-family: 'Fors';
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border: 2px solid var(--second-color);
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.radio-option:hover {
+    background-color: #e9ecef;
+    border-color: var(--main-color);
+}
+
+.radio-option input[type="radio"] {
+    margin: 0;
+    transform: scale(1.2);
+}
+
+.radio-label {
+    margin: 0;
+    font-family: 'Fors';
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    border: 2px solid var(--second-color);
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin: 2px 0 0 0;
+    transform: scale(1.2);
+}
+
+.checkbox-label {
+    margin: 0;
+    font-family: 'Fors';
+    color: var(--main-color);
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.radio-option input[type="radio"]:focus,
+.checkbox-group input[type="checkbox"]:focus {
+    outline: 2px solid var(--second-color);
+    outline-offset: 2px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.coins-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.coin-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.coin-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.coin-card p {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.coin-card .form-row {
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.coin-card .form-row input {
+    width: 100%;
+    max-width: 120px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-top: 30px;
+    }
+    
+    .main {
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .column-images, 
+    .column-text {
+        flex: none;
+        width: 100%;
+    }
+    
+    p {
+        font-size: 24px;
+    }
+    
+    button {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+    
+    nav a {
+        font-size: 16px;
+        padding: 10px 15px;
+        margin: 2px;
+    }
+    
+    .coins-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    
+    nav {
+        padding: 10px 5px;
+    }
+    
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin: 1px;
+    }
+    
+    .coins-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .coin-card {
+        padding: 10px;
+    }
+    
+    .coin-card img {
+        max-width: 150px;
+    }
+    
+    .secondary-nav {
+        flex-wrap: wrap;
+        gap: 15px !important;
+    }
+    
+    .cartinka {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 375px) {
+    p {
+        font-size: 18px;
+    }
+    
+    nav a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    
+    .main {
+        padding: 5px;
+    }
+}
